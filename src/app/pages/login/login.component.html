@@ -1,26 +1,4 @@
 <!-- src/app/pages/login/login.component.html -->
-<!-- <div class="row justify-content-center">
-  <div class="col-md-6">
-    <div class="card p-4">
-      <h4>Logga in</h4>
-      <form (ngSubmit)="submit()">
-        <div class="mb-3">
-          <label class="form-label">Användarnamn</label>
-          <input class="form-control" [(ngModel)]="username" name="username" required />
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Lösenord</label>
-          <input class="form-control" [(ngModel)]="password" name="password" type="password" required />
-        </div>
-        <button class="btn btn-primary" type="submit" [disabled]="loading">Logga in</button>
-        <a class="btn btn-link" routerLink="/register">Registrera</a>
-        <div class="text-danger mt-2" *ngIf="error">{{ error }}</div>
-      </form>
-    </div>
-  </div>
-</div> -->
-
-<!-- src/app/pages/login/login.component.html -->
 <div class="row justify-content-center">
   <div class="col-md-6">
     <div class="card p-4 shadow-sm">
@@ -59,7 +37,7 @@
           >
             Logga in
           </button>
-          <a class="btn btn-link" routerLink="/register">Registrera</a>
+          <a class="btn btn-success" routerLink="/register">Registrera</a>
         </div>
 
        <!-- Statusmeddelanden -->
