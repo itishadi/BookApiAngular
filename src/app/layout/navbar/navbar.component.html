@@ -22,9 +22,9 @@
     </div>
   </div>
 </nav> -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+<nav *ngIf="loggedIn" class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
   <div class="container">
-    <a class="navbar-brand" routerLink="/">BookApp</a>
+    <a class="navbar-brand" routerLink="/home">BookApp</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -37,8 +37,7 @@
         <button class="btn btn-outline-secondary" (click)="toggleTheme()">
           <i class="fa" [ngClass]="isDark ? 'fa-sun' : 'fa-moon'"></i>
         </button>
-        <a *ngIf="!loggedIn" class="btn btn-primary" routerLink="/login">Logga in</a>
-        <div *ngIf="loggedIn" class="d-flex align-items-center gap-2">
+        <div class="d-flex align-items-center gap-2">
           <span class="text-success">✅ Inloggad</span>
           <button class="btn btn-outline-danger btn-sm" (click)="logout()">Logga ut</button>
         </div>
