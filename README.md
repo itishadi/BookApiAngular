@@ -1,27 +1,62 @@
-# BookApiAngular
+📝 README.md – exempel
+markdown
+# 📚 BookApiAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2.
+Responsiv CRUD-applikation byggd med Angular 20 och .NET 9 C# API. Projektet innehåller bokhantering, citatfunktion, JWT-autentisering, Bootstrap-design och mörkt/ljust tema.
 
-## Development server
+## 🚀 Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+```bash
+npm install
+ng serve
+🌐 Backend API
+Base URL:
 
-## Code scaffolding
+Kod
+https://bookapibackend-fxd4c6ahazbfb8g9.northeurope-01.azurewebsites.net/api
+🔑 Auth
+POST /auth/register
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+POST /auth/login
 
-## Build
+📖 Books
+GET /books
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+GET /books/{id}
 
-## Running unit tests
+POST /books
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+PUT /books/{id}
 
-## Running end-to-end tests
+DELETE /books/{id}
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+💬 Quotes
+GET /quotes/my
 
-## Further help
+GET /quotes/{id}
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+POST /quotes
+
+PUT /quotes/{id}
+
+DELETE /quotes/{id}
+
+🧪 Testa med Postman
+Registrera en användare via /auth/register
+
+Logga in via /auth/login och kopiera JWT-token
+
+Lägg token i Postman under Authorization → Bearer Token
+
+Testa alla CRUD-endpoints
+
+🎨 Funktioner
+Responsiv design med Bootstrap
+
+Font Awesome-ikoner
+
+Light/Dark mode toggle
+
+Skyddade routes med JWT
+
+Navigering mellan bok- och citatvyer
